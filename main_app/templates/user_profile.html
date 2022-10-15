@@ -19,5 +19,16 @@
     {% endif %}
 </ul>
 
+<h1>Followed Events</h1>
+<ul>
+    {% if profile.followed_event.count %}
+        {% for events in profile.followed_event.all %}
+    <li>
+        <a href="{% url 'detail' events.event_seatgeek_id %}">{{events.event_name}}</a>   
+    </li>
+    {% endfor %}
+    {% endif %}
+</ul>
+
 {% endblock %}
 

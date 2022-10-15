@@ -121,8 +121,8 @@
             <!-- <div class="related-artist-cards"> -->
     {% for artist in artist_related_artists.recommendations %}
             <!-- <div class="related-artist-card"> -->
-                <div>
-                <img class="related-artist-image" src="{{ artist.performer.image }}">
+                <div class="card">
+                <img class="related-artist-image card-img-top" src="{{ artist.performer.image }}">
                 <a href="{% url 'artist_detail' artist.performer.id%}"><p>{{artist.performer.name}}</p></a>
                 </div>
             <!-- </div> -->

@@ -59,7 +59,7 @@
             <h2>Check out {{artist.name}} top songs!</h1>
             </div>
                 <div class="spotify-player">
-            <div class="artist-top-songs">
+            <!-- <div class="artist-top-songs">
                 <ul id="songs">
         {% if artist_top_songs != "" %}
         {% for song in artist_top_songs.tracks %}
@@ -71,10 +71,10 @@
                     <li>No spotify links for the artist found</li>
         {% endif %}
                 </ul>
-            </div>
-            <iframe id="spotifyPlayer" style="border-radius:12px" src="https://open.spotify.com/embed/track/{{artist_top_songs.tracks.0.id}}
-                    ?utm_source=generator" frameBorder="0" allowfullscreen="" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-            </iframe>
+            </div> -->
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/{{artist_id}}" 
+            width="100%" height="380" frameBorder="0" allowfullscreen="" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
             </div>
     </div>
     </div>
@@ -131,6 +131,8 @@
         </div>
     </div>
    </div> 
+
+   
 <script>
     
     document.querySelectorAll('ul#songs > li > button').forEach(

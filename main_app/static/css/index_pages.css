@@ -1,6 +1,11 @@
 /* HOME AND ABOUT PAGE STYLING */
-
 /* HOME PAGE */
+/* .home-container-title {
+    margin-bottom: 1rem;
+} */
+.home-search-container {
+  background-color: #f8f9fa;
+}
 
 .home-container {
   display: flex;
@@ -19,7 +24,6 @@
   margin-bottom: 20px;
   padding-bottom: 30px;
 }
-
 .home-search {
   display: flex;
   justify-content: center;
@@ -44,7 +48,6 @@
 #browseSpan {
   font-style: italic;
 }
-
 .card-grid {
   display: flex;
   width: 100%;
@@ -52,7 +55,6 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .grid-card {
   display: block;
   text-align: center;
@@ -99,34 +101,28 @@ hr {
   margin:0;
   height: 1px;
 }
-
 .grid-card a {
   text-decoration: none;
   color: black;
 }
-
 .card:hover {
   transform: scale(1.05);
 }
-
 @media only screen and (min-width: 400px) {
   .grid-card {
     flex-basis: 50%;
   }
 }
-
 @media only screen and (min-width: 640px) {
   .grid-card {
     flex-basis: 33%;
   }
 }
-
 @media only screen and (min-width: 960px) {
   .grid-card {
     flex-basis: 25%;
   }
 }
-
 @media only screen and (min-width: 1280px) {
   .grid-card {
     flex-basis: 18%;
@@ -135,8 +131,4 @@ hr {
 
 
 /* SEARCH RESULTS PAGE */
-
-/* USER PROFILE PAGE */
-
-
-
+/* USER PROFILE PAGE *
